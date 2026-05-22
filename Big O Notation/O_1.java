@@ -4,11 +4,11 @@ public class O_1 {
 
         int[] list = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-        Cronometro.start();
+        Cron.start();
 
         int result = constantTime(list);
 
-        long tiempo = Cronometro.stop();
+        long tiempo = Cron.stop();
 
         System.out.println("El primer elemento es: " + result);
         System.out.println("Tiempo de ejecución: " + tiempo + " nanosegundos");
@@ -23,18 +23,6 @@ public class O_1 {
         }
     }
 
-    public static class Cronometro {
-
-        private static long startTime;
-
-        public static void start() {
-            startTime = System.nanoTime();
-        }
-
-        public static long stop() {
-            return System.nanoTime() - startTime;
-        }
-    }
     // Complejidad temporal: O(1)
     // La función siempre accede al primer elemento del arreglo,
     // sin importar el tamaño de la entrada.
