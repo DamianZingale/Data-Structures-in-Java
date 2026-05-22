@@ -16,6 +16,7 @@ public class O_log_n {
         // Esto resulta en una complejidad logarítmica, ya que el número de operaciones necesarias para encontrar el elemento crece de manera logarítmica con respecto al tamaño de la entrada. 
         // A medida que el tamaño de la lista aumenta, el tiempo de ejecución crece mucho más lentamente en comparación con algoritmos de complejidad lineal o cuadrática, 
         // lo que hace que la búsqueda binaria sea eficiente para listas grandes.
+        // La lista debe estar ordenada para que la búsqueda binaria funcione correctamente, lo que es un requisito importante a tener en cuenta al utilizar este algoritmo.
     }
 
     public static int binarySearch(int[] list, int target) {
