@@ -9,7 +9,7 @@ Based on the book _“Estructuras de Datos en Java”_ by Luis Joyanes Aguilar &
 This repository is focused on learning and practicing data structures by implementing solutions manually, without using AI-generated code.
 
 ## Topics
-
+- Big O Notation
 - Linked Lists
 - Stacks
 - Queues
