@@ -3,9 +3,13 @@ public class O_log_n {
     public static void main (String[] args) {
         int[] list = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30};
         Cron.start();
-        int result = binarySearch(list, 5);
+        int result = binarySearch(list, 30);
         long time = Cron.stop();
-        System.out.println("Elemento encontrado: " + list[result]);
+        if (result != -1) {
+            System.out.println("Elemento encontrado: " + list[result]);
+        } else {
+            System.out.println("Elemento no encontrado");
+        }
         System.out.println("Tiempo de ejecución: " + time + " nanosegundos");
         // Complejidad temporal: O(log n)
         // La función utiliza una búsqueda binaria, que divide la lista en mitades en cada iteración. 
@@ -30,7 +34,7 @@ public class O_log_n {
                 high = mid - 1;
             }
         }
-        
+        System.out.println("Número de ciclos: " + ciclos);
         return -1;
     }
 }
